@@ -1,0 +1,4 @@
+- Observer desgin pattern is a behavioural design pattern.
+- In the observer design pattern, we would have an publisher or event emiiter that would emit events to its subscribers.
+- Hence this design pattern is also called as event subscriber design pattern. You can also call this as listener design pattern.
+- For the practice purpose, we would have an editor (publisher) that would emit events to the subscribers. The subscribers would listen for the events of the file open and save.
