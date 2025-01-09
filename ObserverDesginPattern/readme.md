@@ -1,0 +1,5 @@
+- Observer design pattern is a behavioural design pattern. 
+- Observer design pattern is also called as publisher subscriber design model, event subscriber design model or the listner design model.
+- We can use this design pattern when we have to design a pattern where some objects have to take some action based on the change of state of another object.
+- The object that is being observerd is called as the event and the listners are called the subscribers.
+- To pratice this, we have an example where a save action and the file open action on an editor file should be notified to the subscribers.
