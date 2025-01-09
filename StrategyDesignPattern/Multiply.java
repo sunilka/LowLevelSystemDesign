@@ -1,0 +1,7 @@
+package StrategyDesignPattern;
+
+public class Multiply implements Strategy{
+    public int calculate(int no1, int no2){
+        return no1*no2;
+    }
+}

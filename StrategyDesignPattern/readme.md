@@ -1,0 +1,3 @@
+- Strategy design pattern is behavioural desgin pattern.
+- We use the strategy design pattern when we are have different ways of solving the problem. When we have to choose between the different strategies at run time then we have to use this pattern.
+- As an example for solving the stategy design pattern, we are taking the example for the implementing the add, subtract, multiply and divide strategies. The code would take in 2 numbers and give the result of computation.
