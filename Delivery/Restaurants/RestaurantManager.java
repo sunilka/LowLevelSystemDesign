@@ -2,7 +2,17 @@ package Delivery.Restaurants;
 import java.util.*;
 
 public class RestaurantManager {
+    private static RestaurantManager restaurantManager;
     List<Restaurant> restaurants = new ArrayList<>();
+
+    private RestaurantManager(){}
+
+    public static RestaurantManager getRestaurantManagerInstance(){
+        if(restaurantManager == null){
+            restaurantManager = new RestaurantManager();
+        }
+        return restaurantManager;
+    }
 
     public void addRestaurant(Restaurant restaurant){
         this.restaurants.add(restaurant);

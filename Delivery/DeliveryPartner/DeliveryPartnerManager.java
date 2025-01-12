@@ -2,7 +2,18 @@ package Delivery.DeliveryPartner;
 import java.util.*;
 
 public class DeliveryPartnerManager {
+
+    private static DeliveryPartnerManager deliveryPartnerManager;
     List<DeliveryPartner> deliveryPartners = new ArrayList<>();
+
+    private DeliveryPartnerManager(){}
+
+    public static synchronized DeliveryPartnerManager getDeliveryPartnerManagerInstance(){
+        if(deliveryPartnerManager == null){
+            deliveryPartnerManager = new DeliveryPartnerManager();
+        }
+        return deliveryPartnerManager;
+    }
 
     public void addDeliveryPartner(DeliveryPartner deliveryPartner){
         this.deliveryPartners.add(deliveryPartner);

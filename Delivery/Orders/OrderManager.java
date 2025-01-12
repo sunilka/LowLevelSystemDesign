@@ -2,7 +2,17 @@ package Delivery.Orders;
 import java.util.*;
 
 public class OrderManager {
+    private static OrderManager orderManager;
     List<Order> orders = new ArrayList<>();
+
+    private OrderManager(){}
+
+    public static synchronized OrderManager getOrderManagerInstance(){
+        if(orderManager == null){
+            orderManager = new OrderManager();
+        }
+        return orderManager;
+    }
 
     public void registerOrder(Order order){
         this.orders.add(order);

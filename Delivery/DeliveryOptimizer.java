@@ -16,20 +16,15 @@ public class DeliveryOptimizer {
     public OrderManager orderManager;
     public RestaurantManager restaurantManager;
 
-    public DeliveryOptimizer(CustomerManager customerManager, DeliveryPartnerManager deliveryPartnerManager, OrderManager orderManager, RestaurantManager restaurantManager){
-        this.customerManager = customerManager;
-        this.deliveryPartnerManager = deliveryPartnerManager;
-        this.orderManager = orderManager;
-        this.restaurantManager = restaurantManager;
+    public DeliveryOptimizer(){
+        this.customerManager = CustomerManager.getCustomerManagerInstance();
+        this.deliveryPartnerManager = DeliveryPartnerManager.getDeliveryPartnerManagerInstance();
+        this.orderManager = OrderManager.getOrderManagerInstance();
+        this.restaurantManager = RestaurantManager.getRestaurantManagerInstance();
     }
 
     public static void main(String args[]){
-        DeliveryOptimizer deliveryOptimizer = new DeliveryOptimizer(
-            new CustomerManager(),
-            new DeliveryPartnerManager(),
-            new OrderManager(),
-            new RestaurantManager()
-        );
+        DeliveryOptimizer deliveryOptimizer = new DeliveryOptimizer();
 
         // Creating Restaurants
         deliveryOptimizer.restaurantManager.addRestaurant(new Restaurant(1, "Restaurant 1", new Location(12.930, 77.620)));
