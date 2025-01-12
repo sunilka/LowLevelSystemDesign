@@ -1,0 +1,7 @@
+- Singleton design pattern is a creational design pattern.
+- Singleton is the most easiest desgin pattern.
+- In the singleton desgin pattern we can create only one instance of the singleton class.
+- In the singleton class the constructor is made as priavte so that we are not able to create the object of that class anywhere else.
+- The private constructor would be static and also the variable that would hold the object would also be static.
+- To make the method of generating the object thread safe we would use the "syncronized" keyword with the function definition.
+- An example code for the singleton desgin pattern is shown.
