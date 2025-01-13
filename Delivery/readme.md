@@ -64,8 +64,7 @@ The delivery optimizer class would be the top most class which would hold the ma
 
 **Design pattern used for implementation:**
 
-
-1) Singleton Design Pattern
+**Singleton Design Pattern**
 
 - Purpose: 
 The Singleton Design Pattern ensures that a class has only one instance and provides a global point of access to that instance. This is particularly useful for managing shared resources where multiple instances could lead to inconsistency or unnecessary overhead.
@@ -90,7 +89,7 @@ Benefits:
 2) Efficiency: Reduces the overhead of creating multiple instances of these managers, making resource management more efficient.
 3) Global Access: Provides a global point of access for managing these resources without the need to pass instances explicitly.
 
-2) Strategy Design pattern:
+**Strategy Design pattern**
 
 - Purpose: 
 The Strategy Design Pattern allows you to define a family of algorithms, encapsulate each one, and make them interchangeable. This enables the algorithm to be selected at runtime, allowing the system to be flexible and adaptable to changing requirements.
