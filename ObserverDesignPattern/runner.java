@@ -1,7 +1,7 @@
-package ObserverDesginPattern;
+package ObserverDesignPattern;
 
-import ObserverDesginPattern.Listeners.FileOpenListener;
-import ObserverDesginPattern.Listeners.FileSaveListener;
+import ObserverDesignPattern.Listeners.FileOpenListener;
+import ObserverDesignPattern.Listeners.FileSaveListener;
 
 public class runner {
     public static void main(String args[]){

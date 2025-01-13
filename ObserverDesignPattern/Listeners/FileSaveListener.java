@@ -1,4 +1,4 @@
-package ObserverDesginPattern.Listeners;
+package ObserverDesignPattern.Listeners;
 
 public class FileSaveListener implements EventListener{
     public void update(String eventType){

@@ -1,7 +1,7 @@
-package ObserverDesginPattern.Publisher;
+package ObserverDesignPattern.Publisher;
 import java.util.Map;
 
-import ObserverDesginPattern.Listeners.EventListener;
+import ObserverDesignPattern.Listeners.EventListener;
 
 import java.util.ArrayList;
 import java.util.HashMap;

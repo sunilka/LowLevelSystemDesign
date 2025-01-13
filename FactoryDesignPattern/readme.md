@@ -1,0 +1,3 @@
+- Factory design pattern is creational design pattern.
+- We will use the factory design pattern when we have to conditionally create objects.
+- To practice the factory design pattern we will have a factory of shapes and concreate classes which will be different shapes. Based on the input provide we will return the object for that.

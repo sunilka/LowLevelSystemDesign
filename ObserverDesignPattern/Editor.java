@@ -1,6 +1,6 @@
-package ObserverDesginPattern;
+package ObserverDesignPattern;
 
-import ObserverDesginPattern.Publisher.EventManager;
+import ObserverDesignPattern.Publisher.EventManager;
 
 public class Editor {
     public EventManager events;

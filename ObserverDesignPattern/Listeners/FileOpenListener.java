@@ -1,4 +1,4 @@
-package ObserverDesginPattern.Listeners;
+package ObserverDesignPattern.Listeners;
 
 public class FileOpenListener implements EventListener{
     public void update(String eventType){
