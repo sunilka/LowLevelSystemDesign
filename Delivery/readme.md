@@ -1,4 +1,4 @@
-Problem Statement:
+**Problem Statement**:
 
 Imagine a delivery executive called Aman standing idle in Koramangala somewhere when suddenly his
 phone rings and notifies that he’s just been assigned a batch of 2 orders meant to be delivered in the
@@ -16,7 +16,7 @@ any two geo-locations, you can use the haversine formula with an average speed o
 basically ignore actual road distance or confirmation delays everywhere although the real world is
 hardly that simple ;))
 
-Low Level Design Components:
+**Low Level Design Components:**
 
 First we design the low level components of the system. The components that we have identified in the system are:
 
@@ -62,7 +62,7 @@ This would be a class that would be used for managing the pool of resturants and
 The delivery optimizer class would be the top most class which would hold the main runner as well.
 
 
-Design pattern used for implementation:
+**Design pattern used for implementation:**
 
 
 1) Singleton Design Pattern
@@ -114,7 +114,7 @@ A concrete implementation of the DeliveryStrategy interface that uses a greedy a
 2) Extensibility: The system can adapt to different types of delivery scenarios. As business requirements change, new strategies can be created and plugged into the system seamlessly.
 3) Separation of Concerns: The DeliveryContext handles the orchestration, while each strategy focuses on a specific algorithm, allowing the system to follow the open/closed principle (i.e., open for extension, closed for modification).
 
-Advantages of This Design:
+**Advantages of This Design:**
 
 - Modular and Scalable: The system can easily handle different delivery strategies by implementing new classes that conform to the DeliveryStrategy interface.
 - Separation of Concerns: Each component is focused on a specific responsibility (e.g., managing customers, orders, delivery partners).
@@ -122,7 +122,7 @@ Advantages of This Design:
 
 This design is well-structured for future extensibility, allowing you to introduce new delivery strategies, handle more complex business logic, and add more features as the system evolves.
 
-Future Improvements (Could not implement due to time constraints :)):
+**Future Improvements (Could not implement due to time constraints :)):**
 
 1) Add more strategies like TSP (Travelling salesman Problem) to find the best route.
 2) Add loggers in the code.
