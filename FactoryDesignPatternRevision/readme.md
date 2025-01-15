@@ -1,0 +1,3 @@
+- Factory design pattern is creational design pattern.
+- We use the factory desgin pattern when we have to create objects based on some condition.
+- To practice the factory design pattern, we are implementing the shapes classes (Triangle, Rectangle, Circle). We will factory, which we will call ShapesFactory, and this ShapesFactory would have a method that would get us the required shape object based on user input.
