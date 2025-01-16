@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class game {
+public class Runner {
 
     boolean _check_empty_positions(board board_obj){
         /* Method to check the if there are any vacant position to place a pawn */
@@ -84,7 +84,7 @@ public class game {
         
         // We have to initilize the board first and also the players.
         // We will have a 3*3 board and we will have 2 players in the game.
-        game game = new game();
+        Runner game = new Runner();
         board board = new board(3);
         player playera = new player(1, "Player A", 25, pawns.CROSS);
         player playerb = new player(2, "Player B", 25, pawns.CIRCLE);
@@ -116,6 +116,7 @@ public class game {
             int x = scanner.nextInt();
             int y = scanner.nextInt();
             System.out.println("Entered input : "+x+" "+y);
+            scanner.close();
 
             if(!game._check_if_input_position_are_valid(x, y, board)){
             System.out.println("Invalid input positions, plz re-enter the valid positions");
@@ -140,5 +141,6 @@ public class game {
             }
             player_turn_queue.addLast(player_turn_to_play);
         }
+        
     }
 }
