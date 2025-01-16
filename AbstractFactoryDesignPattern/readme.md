@@ -1,4 +1,7 @@
-- Abstract factory is a creational design pattern.
-- Abstract design pattern is also called as factory or factory design pattern.
-- In the case where we have to create objects based on a certain condition, thats when we will be using the abstract factory desing pattern.
-- To practice the abstract factory design pattern, we will be having a factory for the rounded shape objects and for the edged shaped objects.
+- Abstract Factory design pattern is a creational design pattern.
+- The abstract factory design pattern is also called as factory of factory design pattern.
+- The abstract factory design pattern is used when we have to create objects based on cretain conditions.
+- In the abstract factory design pattern we will be grouping the objects with some common similarites into one factory and sother objects with differences are gouped under their own factory. 
+- There would be a common factory that would again host these factories in them.
+- To practice the abstract factory, we will implement a GUI factory that would give us buttons and checkboxes. There would be two families of these buttons, namely Windows button and the Mac OS buttons.
+- We would have a factory that would give us the Windows buttons and a factory that would give the Mac OS buttons.
