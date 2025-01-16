@@ -1,6 +1,6 @@
 package StrategyDesignPattern;
 
-public class main {
+public class Runner {
     public static void main(String args[]){
         System.out.println("Executing the code");
         Context context = new Context();
