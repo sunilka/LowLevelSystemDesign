@@ -1,0 +1,4 @@
+- The state design pattern is a behavioural design pattern. 
+- In the state design pattern is used when the object's behaviour has to change its state based on the internal state, meaning the same object can act differently based on what state it is currently in.
+- In the state design pattern, we will have an interface that would hold all the states that the system can be in. The concreate classes would be the possible states of the system and would implement this interface.
+- To look at the example for the state desgin pattern we will looking at the example for the vending machine design pattern.
